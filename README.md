@@ -38,3 +38,29 @@ If OTP is wrong → **OTP Mismatch**
 If OTP expires → **OTP Expired**
 
 ## 📂 Project Structure
+src/main/java/com/jsp/email
+├── EmailController.java
+├── EmailOtpApplication.java
+├── UserDto.java
+
+src/main/resources
+├── application.properties
+├── templates
+│ ├── mail.html
+│ ├── otp.html
+
+
+## ▶️ Running the Project
+
+1. Start Redis server
+
+2. Run Spring Boot
+
+3. Open browser
+
+4. Enter email and verify OTP.
+
+## 🔒 Note
+Before running the project, configure your Gmail SMTP in `application.properties`.
+spring.mail.username=your_email@gmail.com
+spring.mail.password=your_app_password
