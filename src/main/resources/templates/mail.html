@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register using Email</title>
+</head>
+<body>
+	<div align="center">
+	<h1>Otp Verification</h1>
+		<form action="/send-otp">
+			<input type="text" name="name" placeholder="Enter Name"><br><br> <input
+				type="text" name="email" placeholder="Enter Email"><br><br> <input
+				type="text" name="gender" placeholder="Enter Gender"><br><br>
+			<button>Send</button>
+		</form>
+	</div>
+	
+	<script type="text/javascript" th:if="${message}">
+		alert("[[${message}]]");
+	</script>
+</body>
+</html>
